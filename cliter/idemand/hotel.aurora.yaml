@@ -1,0 +1,34 @@
+boundedContextName: idemand
+moduleName: hotel
+moduleNames: hotels
+aggregateName: IdemandHotel
+hasOAuth: false
+hasTenant: false
+hasAuditing: false
+aggregateProperties:
+  - name: id
+    type: id
+    primaryKey: true
+    length: 36
+    nullable: false
+  - name: totalRooms
+    type: varchar
+    maxLength: 50
+    nullable: false
+  - name: bookedRooms
+    type: varchar
+    nullable: false
+  - name: percentage
+    type: varchar
+    nullable: false
+  - name: createdAt
+    type: timestamp
+    nullable: true
+  - name: updatedAt
+    type: timestamp
+    nullable: true
+  - name: deletedAt
+    type: timestamp
+    nullable: true
+additionalApis: []
+version: 0.0.1
