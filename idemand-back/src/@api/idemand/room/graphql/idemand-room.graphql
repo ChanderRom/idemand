@@ -1,0 +1,96 @@
+
+type IdemandRoom
+{
+    id: ID!
+    type: GraphQLString!
+    price: GraphQLString!
+    date: GraphQLISODateTime!
+    createdAt: GraphQLTimestamp
+    updatedAt: GraphQLTimestamp
+    deletedAt: GraphQLTimestamp
+}
+
+input IdemandCreateRoomInput
+{
+    id: ID!
+    type: GraphQLString!
+    price: GraphQLString!
+    date: GraphQLISODateTime!
+}
+
+input IdemandUpdateRoomByIdInput
+{
+    id: ID!
+    type: GraphQLString
+    price: GraphQLString
+    date: GraphQLISODateTime
+}
+
+input IdemandUpdateRoomsInput
+{
+    id: ID
+    type: GraphQLString
+    price: GraphQLString
+    date: GraphQLISODateTime
+}
+
+type Query
+{
+    idemandFindRoom(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): IdemandRoom
+
+    idemandFindRoomById(
+        id: ID
+        constraint: QueryStatement
+    ): IdemandRoom
+
+    idemandGetRooms(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [IdemandRoom]!
+
+    idemandPaginateRooms(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): Pagination!
+
+}
+
+type Mutation
+{
+    idemandCreateRoom(
+        payload: IdemandCreateRoomInput!
+    ): IdemandRoom
+
+    idemandCreateRooms(
+        payload: [IdemandCreateRoomInput]!
+    ): Boolean!
+
+    idemandUpdateRoomById(
+        payload: IdemandUpdateRoomByIdInput!
+        constraint: QueryStatement
+    ): IdemandRoom
+
+    idemandUpdateRooms(
+        payload: IdemandUpdateRoomsInput!
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [IdemandRoom]!
+
+    idemandUpsertRoom(
+        payload: IdemandUpdateRoomByIdInput!
+    ): IdemandRoom
+
+    idemandDeleteRoomById(
+        id: ID!
+        constraint: QueryStatement
+    ): IdemandRoom
+
+    idemandDeleteRooms(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [IdemandRoom]!
+
+}

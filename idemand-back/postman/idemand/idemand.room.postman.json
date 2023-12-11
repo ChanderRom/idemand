@@ -1,0 +1,561 @@
+{
+    "info": {
+		"_postman_id"   : "d9bc3afc-fd40-5505-b57f-8f5d5118e01b",
+		"name"          : "@app - idemand/room",
+		"schema"        : "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+			"name": "GraphQL - idemandCreateRoom",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:IdemandCreateRoomInput!)\n{\n\tidemandCreateRoom (payload:$payload)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t}\n}",
+                        "variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"type\": \"3\", \n\t\t\"price\": \"2\", \n\t\t\"date\": \"2023-12-10\"\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandCreateRooms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:[IdemandCreateRoomInput]!)\n{\n\tidemandCreateRooms (payload:$payload)\n}",
+						"variables": "{\n\t\"payload\":\n\t[\n\t\t{\n\t\t\t\"id\": \"98ff2f61-9925-4758-b72f-efb64812f732\", \n\t\t\t\"type\": \"x\", \n\t\t\t\"price\": \"i\", \n\t\t\t\"date\": \"2023-12-11\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"24023dc6-f507-4341-b67e-e20283ecbb42\", \n\t\t\t\"type\": \"9\", \n\t\t\t\"price\": \"j\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"3b15a25a-d18c-4f80-a3cd-9c8daf8b5a72\", \n\t\t\t\"type\": \"h\", \n\t\t\t\"price\": \"q\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"22629391-ae1c-4550-9d80-cba3a2f013db\", \n\t\t\t\"type\": \"b\", \n\t\t\t\"price\": \"e\", \n\t\t\t\"date\": \"2023-12-11\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"653f38a9-15d8-426f-9843-564bae618001\", \n\t\t\t\"type\": \"e\", \n\t\t\t\"price\": \"m\", \n\t\t\t\"date\": \"2023-12-11\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"d2fe150b-dd8a-4c4d-8868-b6cb060590c9\", \n\t\t\t\"type\": \"a\", \n\t\t\t\"price\": \"2\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"15bae974-76f3-4f55-bfb2-a904afae6dd5\", \n\t\t\t\"type\": \"0\", \n\t\t\t\"price\": \"u\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"bfb3fa6c-8877-447c-891c-46336218f904\", \n\t\t\t\"type\": \"5\", \n\t\t\t\"price\": \"b\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"8e2b058b-5e3b-46e9-92b5-af18ab3553da\", \n\t\t\t\"type\": \"u\", \n\t\t\t\"price\": \"p\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"d4994637-4a72-49ef-88da-6e831e68b19c\", \n\t\t\t\"type\": \"g\", \n\t\t\t\"price\": \"g\", \n\t\t\t\"date\": \"2023-12-11\"\n\t\t}\n\t]\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandPaginateRooms",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement $constraint:QueryStatement)\n{\n\tidemandPaginateRooms (query:$query constraint:$constraint)\n\t{\n\t\ttotal\n\t\tcount\n\t\trows\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandGetRooms",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement)\n{\n\tidemandGetRooms (query: $query)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{ \n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandFindRoom",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement)\n{\n\tidemandFindRoom (query: $query)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandFindRoomById",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($id:ID)\n{\n\tidemandFindRoomById (id:$id)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandUpdateRoom",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:IdemandUpdateRoomInput!)\n{\n\tidemandUpdateRoom (payload:$payload)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"type\": \"a\", \n\t\t\"price\": \"j\", \n\t\t\"date\": \"2023-12-10\"\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandDeleteRoomById",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($id:ID!)\n{\n\tidemandDeleteRoomById (id:$id)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandDeleteRooms",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($query:QueryStatement)\n{\n\tidemandDeleteRooms (query: $query)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\":\n\t\t\t{\n\t\t\t\t\"[substring]\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/room/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key"   : "Content-Type",
+						"name"  : "Content-Type",
+						"type"  : "text",
+						"value" : "application/json"
+					}				],
+				"body": {
+					"mode"  : "raw",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"type\": \"d\", \n\t\"price\": \"1\", \n\t\"date\": \"2023-12-11\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/room/create",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"room",
+                        "create"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/rooms/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key"   : "Content-Type",
+						"name"  : "Content-Type",
+						"type"  : "text",
+						"value" : "application/json"
+					}				],
+				"body": {
+					"mode"  : "raw",
+					"raw"   : "[\n\t{\n\t\t\"id\": \"1fb1a423-ae5a-4745-9c74-667814c9cdcc\", \n\t\t\"type\": \"1\", \n\t\t\"price\": \"y\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"fee93522-409a-4a8f-8b9b-c6a490bdd850\", \n\t\t\"type\": \"3\", \n\t\t\"price\": \"j\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"ed52fabc-8e80-4025-881d-0c317913490f\", \n\t\t\"type\": \"m\", \n\t\t\"price\": \"q\", \n\t\t\"date\": \"2023-12-11\"\n\t}, \n\t{\n\t\t\"id\": \"b53842a6-65ea-4fb2-a9a8-08ce76432faa\", \n\t\t\"type\": \"4\", \n\t\t\"price\": \"n\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"a100680d-f51f-4a2e-9989-6bb456b5ad0a\", \n\t\t\"type\": \"c\", \n\t\t\"price\": \"k\", \n\t\t\"date\": \"2023-12-11\"\n\t}, \n\t{\n\t\t\"id\": \"998c4535-7e39-4eea-8a89-97746abc3b84\", \n\t\t\"type\": \"y\", \n\t\t\"price\": \"j\", \n\t\t\"date\": \"2023-12-11\"\n\t}, \n\t{\n\t\t\"id\": \"0ab797b3-fe59-4070-9527-1b9df3d00d50\", \n\t\t\"type\": \"z\", \n\t\t\"price\": \"m\", \n\t\t\"date\": \"2023-12-11\"\n\t}, \n\t{\n\t\t\"id\": \"fa212d19-78c4-46b4-8b1b-36139067c931\", \n\t\t\"type\": \"1\", \n\t\t\"price\": \"s\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"001ee8b7-e912-4706-beec-1ae961a02de0\", \n\t\t\"type\": \"8\", \n\t\t\"price\": \"n\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"6d3f2cfc-b45f-4082-9002-ed2df608b667\", \n\t\t\"type\": \"k\", \n\t\t\"price\": \"v\", \n\t\t\"date\": \"2023-12-10\"\n\t}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/rooms/create",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"rooms",
+                        "create"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/rooms/paginate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/rooms/paginate",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+                        "rooms",
+                        "paginate"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/rooms/get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{ \n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/rooms/get",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"rooms",
+                        "get"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/room/find",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/room/find",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"room",
+                        "find"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/room/find/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/room/find/5b19d6ac-4081-573b-96b3-56964d5326a8",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"room",
+                        "find",
+						"5b19d6ac-4081-573b-96b3-56964d5326a8"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/room/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"type\": \"v\", \n\t\"price\": \"e\", \n\t\"date\": \"2023-12-10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/room/update",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"room",
+                        "update"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/room/delete/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/room/delete/5b19d6ac-4081-573b-96b3-56964d5326a8",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"room",
+                        "delete",
+						"5b19d6ac-4081-573b-96b3-56964d5326a8"
+					]
+				}
+			},
+			"response": []
+		},
+        {
+			"name": "REST - idemand/rooms/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\":\n\t\t\t{\n\t\t\t\t\"[substring]\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/rooms/delete",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"rooms",
+                        "delete"
+					]
+				}
+			},
+			"response": []
+		}
+    ],
+    "variable": [
+		{
+			"id": "d9bc3afc-fd40-5505-b57f-8f5d5118e01b",
+			"key": "URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

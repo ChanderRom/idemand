@@ -1,0 +1,33 @@
+boundedContextName: idemand
+moduleName: room
+moduleNames: rooms
+aggregateName: IdemandRoom
+hasOAuth: false
+hasTenant: false
+hasAuditing: false
+aggregateProperties:
+  - name: id
+    type: id
+    primaryKey: true
+    length: 36
+    nullable: false
+  - name: type
+    type: varchar
+    nullable: false
+  - name: price
+    type: varchar
+    nullable: false
+  - name: date
+    type: date
+    nullable: false
+  - name: createdAt
+    type: timestamp
+    nullable: true
+  - name: updatedAt
+    type: timestamp
+    nullable: true
+  - name: deletedAt
+    type: timestamp
+    nullable: true
+additionalApis: []
+version: 0.0.1
