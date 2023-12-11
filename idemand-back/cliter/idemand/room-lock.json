@@ -2,10 +2,6 @@
     "version": "0.0.1",
     "files": [
         {
-            "path": "src/@app/idemand/index.ts",
-            "integrity": "sha1:728b8e57f95bdf143cae1381fb0b2fa82a2643b6"
-        },
-        {
             "path": "src/@app/idemand/idemand.seed.ts",
             "integrity": "sha1:c13216bd1307b6099adbe058dd669a64f8de3228"
         },
@@ -15,11 +11,11 @@
         },
         {
             "path": "src/@app/idemand/room/application/create/idemand-create-rooms.command-handler.ts",
-            "integrity": "sha1:2635ba920c09b7e26e9770244baea68dc4917790"
+            "integrity": "sha1:dbef541c8a94da6533149dc15ef066e4bfb3ee5e"
         },
         {
             "path": "src/@app/idemand/room/application/create/idemand-create-rooms.command.ts",
-            "integrity": "sha1:750c5adef02a274a6331c3b81083105697f9dc58"
+            "integrity": "sha1:e11e2e2688ee9dff303ec3e106b054fef2e70b02"
         },
         {
             "path": "src/@app/idemand/room/application/create/idemand-create-rooms.service.spec.ts",
@@ -27,27 +23,27 @@
         },
         {
             "path": "src/@app/idemand/room/application/create/idemand-create-rooms.service.ts",
-            "integrity": "sha1:3c9b7b774e5b6d6d5ec69f5538c59f4311ac8019"
+            "integrity": "sha1:ce15a60a0aa86e16c737d189b427451601e152a0"
         },
         {
             "path": "src/@app/idemand/room/application/create/idemand-create-room.command-handler.spec.ts",
-            "integrity": "sha1:a51b375804004b1e2e03d71652f92d2d090dcddf"
+            "integrity": "sha1:561cbbcd7f6f5abbff361e897cb4da0a6f2ba231"
         },
         {
             "path": "src/@app/idemand/room/application/create/idemand-create-room.command-handler.ts",
-            "integrity": "sha1:90d92290649e7cf3f7ef766526b969194d340755"
+            "integrity": "sha1:8f1fd2807aa2489fabcafad831e6370b75fc622d"
         },
         {
             "path": "src/@app/idemand/room/application/create/idemand-create-room.command.ts",
-            "integrity": "sha1:661df7680452613a676e383720e95907b40222d4"
+            "integrity": "sha1:1992f5359ad5aca8c2d9f78f8ae965068f7483ed"
         },
         {
             "path": "src/@app/idemand/room/application/create/idemand-create-room.service.spec.ts",
-            "integrity": "sha1:1ae029bf17394bccc886ea3d38f0894361628125"
+            "integrity": "sha1:3bb7f31711a782b43d999c74599e25c18fc8447e"
         },
         {
             "path": "src/@app/idemand/room/application/create/idemand-create-room.service.ts",
-            "integrity": "sha1:8f5b595da99a14361c5093e89d5f59409c093a0f"
+            "integrity": "sha1:ca3aa727c35d65e67782f9fb28223a656d5a8fb4"
         },
         {
             "path": "src/@app/idemand/room/application/delete/idemand-delete-rooms.command-handler.spec.ts",
@@ -91,7 +87,7 @@
         },
         {
             "path": "src/@app/idemand/room/application/events/idemand-add-rooms-context.event.ts",
-            "integrity": "sha1:1d92a94d408fdfd2fab7a0c9ea55a3d119c3d022"
+            "integrity": "sha1:3afd29b1c102cfae2b8cc8cd1a531be6cd1ef76f"
         },
         {
             "path": "src/@app/idemand/room/application/events/idemand-created-rooms.event-handler.ts",
@@ -107,7 +103,7 @@
         },
         {
             "path": "src/@app/idemand/room/application/events/idemand-created-room.event.ts",
-            "integrity": "sha1:ba48a473d3accfcb0ca6bbc548ac96ec3ecb885a"
+            "integrity": "sha1:0b4b4745ecc3c0e87efe4e7f3487bea112bd2d4b"
         },
         {
             "path": "src/@app/idemand/room/application/events/idemand-deleted-rooms.event-handler.ts",
@@ -123,7 +119,7 @@
         },
         {
             "path": "src/@app/idemand/room/application/events/idemand-deleted-room.event.ts",
-            "integrity": "sha1:6c740c1c63a7e0008508bb8e748ce47a922d3c0b"
+            "integrity": "sha1:76343ed678afb6a1f917d2f8d13f73dde6b5f54b"
         },
         {
             "path": "src/@app/idemand/room/application/events/idemand-updated-rooms.event-handler.ts",
@@ -139,7 +135,7 @@
         },
         {
             "path": "src/@app/idemand/room/application/events/idemand-updated-room.event.ts",
-            "integrity": "sha1:dd551a33eefc5593fdf400218bcba5e1b67b1d12"
+            "integrity": "sha1:ac4b3bd0c07f9f6f68f4e661fae9c23cf55716f2"
         },
         {
             "path": "src/@app/idemand/room/application/find/idemand-find-room-by-id.query-handler.spec.ts",
@@ -247,75 +243,75 @@
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-rooms.command-handler.spec.ts",
-            "integrity": "sha1:6da74cbea94f3b6a22e520a44bea16c6fe7cf1cf"
+            "integrity": "sha1:b0a2efd18ef56994e3312c580ae3295709533476"
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-rooms.command-handler.ts",
-            "integrity": "sha1:a87a090dfb63705b0ba248b02ff77f67391bf0cf"
+            "integrity": "sha1:d3bfbfc1925f8a1ee4afc46223b540762183537f"
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-rooms.command.ts",
-            "integrity": "sha1:c37f6831e0a3146bead3af1ab50fd93bbedee53b"
+            "integrity": "sha1:0a9c9509a99a970bee49ee64356e8947ffb17d71"
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-rooms.service.spec.ts",
-            "integrity": "sha1:5cef9a410a1d6e76cc9b05fbf5cd3fda8833081e"
+            "integrity": "sha1:0aebb89cd4a51d11719a7581f4fdee71c2f4f5e4"
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-rooms.service.ts",
-            "integrity": "sha1:c295adb265598113fe81d9c501b2c1b5ab47d8d0"
+            "integrity": "sha1:a07a3d0171e6d9c77abaa558f707623b76dba64b"
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-room-by-id.command-handler.spec.ts",
-            "integrity": "sha1:c49c7963cc511f827d59c0ed9926d835a61aed55"
+            "integrity": "sha1:8eddaaf8894c643354a399da103bdc61e69f3836"
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-room-by-id.command-handler.ts",
-            "integrity": "sha1:57be15f733374d73aa56f2191267b97045fcf89c"
+            "integrity": "sha1:b85d6ed8f486025f2a7ddd8152391be1c935089a"
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-room-by-id.command.ts",
-            "integrity": "sha1:eb58d1921baa6a3965817d0c4c5580452222ab19"
+            "integrity": "sha1:31d01e741f201d4bc6a029df6971ae5d42e42da2"
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-room-by-id.service.spec.ts",
-            "integrity": "sha1:e25401560310a23ce0b60ecf5cabf45ef1581832"
+            "integrity": "sha1:82c3470f17c877e079703208bed478291d4cdfc5"
         },
         {
             "path": "src/@app/idemand/room/application/update/idemand-update-room-by-id.service.ts",
-            "integrity": "sha1:7bd6983c6c4b45fb55edd288036464a1a21048c3"
+            "integrity": "sha1:64393e8afe7a448799cd24cfafa5c43e69f74886"
         },
         {
             "path": "src/@app/idemand/room/application/upsert/idemand-upsert-room.command-handler.spec.ts",
-            "integrity": "sha1:45f1ad7d146143ba736bbaf0c2ad19db2fab6f87"
+            "integrity": "sha1:c146f5bc0147cdd759327861863896fd66cebe5a"
         },
         {
             "path": "src/@app/idemand/room/application/upsert/idemand-upsert-room.command-handler.ts",
-            "integrity": "sha1:900870f80d280f49194b1781088b1f80d0c9c2eb"
+            "integrity": "sha1:dacd8d0f424389041fd71cdd41ff228f691c3c89"
         },
         {
             "path": "src/@app/idemand/room/application/upsert/idemand-upsert-room.command.ts",
-            "integrity": "sha1:73054b07c713fe76e6f695bdad29ffa2837daa68"
+            "integrity": "sha1:2a53c6ce223e1acd51fcdb924fea78ab68779a5f"
         },
         {
             "path": "src/@app/idemand/room/application/upsert/idemand-upsert-room.service.spec.ts",
-            "integrity": "sha1:17c7f930b5b688008c432a47888b1da967de4f7a"
+            "integrity": "sha1:44f96529a4a85d3b4c560f3492bb69d581a1d5d3"
         },
         {
             "path": "src/@app/idemand/room/application/upsert/idemand-upsert-room.service.ts",
-            "integrity": "sha1:d9ac82b8643183aabfca97d4765324305483c642"
+            "integrity": "sha1:8c80770917ebd59ccba41a4d04cfe32f8454e527"
         },
         {
             "path": "src/@app/idemand/room/domain/value-objects/index.ts",
-            "integrity": "sha1:6fef4cbbc82fafb8a9b6ffb199aa55bc72abfc93"
+            "integrity": "sha1:56d968bc93118e304ccedb0620be79f28f73c27b"
         },
         {
             "path": "src/@app/idemand/room/domain/idemand-room.aggregate.ts",
-            "integrity": "sha1:9b17f7e314a7481b2e8432c261d010b8bd60d594"
+            "integrity": "sha1:d3f1e8bac330d58d96aa195444d82dce88343b22"
         },
         {
             "path": "src/@app/idemand/room/domain/idemand-room.mapper.ts",
-            "integrity": "sha1:0657f1f2f9934e17cf1ce641ab369b9e4c28865e"
+            "integrity": "sha1:908367a45eeda4521710f5933e3847aaf06f5252"
         },
         {
             "path": "src/@app/idemand/room/domain/idemand-room.repository.ts",
@@ -323,7 +319,7 @@
         },
         {
             "path": "src/@app/idemand/room/domain/idemand-room.response.ts",
-            "integrity": "sha1:923e55e5b5ec1cd2b60438cfab595789979607f0"
+            "integrity": "sha1:981bc23e4de78a50631af624cc45350608593ab7"
         },
         {
             "path": "src/@app/idemand/room/index.ts",
@@ -331,19 +327,19 @@
         },
         {
             "path": "src/@app/idemand/room/infrastructure/mock/idemand-mock-room.data.ts",
-            "integrity": "sha1:05b7245368ebd75040c7e10ce821e9babe382dfb"
+            "integrity": "sha1:752327a2f6b8a8e88075eff408decd1e017fb031"
         },
         {
             "path": "src/@app/idemand/room/infrastructure/mock/idemand-mock-room.repository.ts",
-            "integrity": "sha1:0d062cf87f98252690580d8bde7aa2cfebacabb2"
+            "integrity": "sha1:5757e19e753dfd5fbb98abb2415bd4c41f61dcd5"
         },
         {
             "path": "src/@app/idemand/room/infrastructure/mock/idemand-mock-room.seeder.ts",
-            "integrity": "sha1:fa3e5d3cb6542c881284306a3189b14a490f7ee8"
+            "integrity": "sha1:daf5f9d56eafee8036a5f432b02bc3d0a56f5f22"
         },
         {
             "path": "src/@app/idemand/room/infrastructure/sequelize/idemand-sequelize-room.model.ts",
-            "integrity": "sha1:f7672a091b23b42463d42cc68e78107781f30613"
+            "integrity": "sha1:fd94ebd955485bc9c011865ecc801c4f8ce449f6"
         },
         {
             "path": "src/@app/idemand/room/infrastructure/sequelize/idemand-sequelize-room.repository.ts",
@@ -358,14 +354,6 @@
             "integrity": "sha1:d92436d1cf603402b2935c4bb5d40e5c5838f991"
         },
         {
-            "path": "src/@app/idemand/room/domain/value-objects/idemand-room-price.ts",
-            "integrity": "sha1:a4c3144ad365e143363717fddb2aa513bfd73bfd"
-        },
-        {
-            "path": "src/@app/idemand/room/domain/value-objects/idemand-room-date.ts",
-            "integrity": "sha1:4563267a1ed5a66cbd888f49e18452cb03d8e3d9"
-        },
-        {
             "path": "src/@app/idemand/room/domain/value-objects/idemand-room-created-at.ts",
             "integrity": "sha1:f587c2141f0adc663b111d1c1951d673804aa9e8"
         },
@@ -376,10 +364,6 @@
         {
             "path": "src/@app/idemand/room/domain/value-objects/idemand-room-deleted-at.ts",
             "integrity": "sha1:bf2b96e8f750fc6b9a0025c430c98bce85021f3e"
-        },
-        {
-            "path": "src/@api/idemand/idemand.module.ts",
-            "integrity": "sha1:a566b72b225c25cd4b8ad33f99903bc4855f71df"
         },
         {
             "path": "src/@api/idemand/idemand.seeder.ts",
@@ -479,23 +463,23 @@
         },
         {
             "path": "src/@api/idemand/room/dto/idemand-create-room.dto.ts",
-            "integrity": "sha1:3e23b588aa9d322e235f0c20a4b53945e74252ea"
+            "integrity": "sha1:2595367c5517b730c3f63fc430f251265f2904e5"
         },
         {
             "path": "src/@api/idemand/room/dto/idemand-update-rooms.dto.ts",
-            "integrity": "sha1:0dfe6c9104ebd82900747ea6ec28d65d4169ae8f"
+            "integrity": "sha1:896845ecc0b56b8d10219f1cba28885f7398e8f9"
         },
         {
             "path": "src/@api/idemand/room/dto/idemand-update-room-by-id.dto.ts",
-            "integrity": "sha1:6ce13e06c20f8ddeb58e61c06f549ebefa392303"
+            "integrity": "sha1:97ad79c76841480ddf795ef2cd90513b11f04629"
         },
         {
             "path": "src/@api/idemand/room/dto/idemand-room.dto.ts",
-            "integrity": "sha1:6589457fd30a3472c79c4aeab90b4ffb90b0d46a"
+            "integrity": "sha1:a95251baeb78ea4451c75749858202ea1cb8ceca"
         },
         {
             "path": "src/@api/idemand/room/graphql/idemand-room.graphql",
-            "integrity": "sha1:242ccbe3135e58ea666c5d3e5cf5e55353e7c38a"
+            "integrity": "sha1:416804e0e69564fb87cd9a5619680dca783557ed"
         },
         {
             "path": "src/@api/idemand/room/handlers/idemand-create-rooms.handler.spec.ts",
@@ -683,11 +667,11 @@
         },
         {
             "path": "test/acceptance/idemand/room.e2e-spec.ts",
-            "integrity": "sha1:c59df4a26ff4edf16a94ed2a811245193e031d1f"
+            "integrity": "sha1:e22982df54ea9a15aac861f539b1755c40cf771e"
         },
         {
             "path": "postman/idemand/idemand.room.postman.json",
-            "integrity": "sha1:6021d06fb13f8ab3b15378db4b349e456f447223"
+            "integrity": "sha1:5fd9de6aa68d9362db730a30f8e61cc297213a1b"
         }
     ]
 }

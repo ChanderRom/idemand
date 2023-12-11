@@ -1,0 +1,96 @@
+
+type IdemandHotel
+{
+    id: ID!
+    name: GraphQLString!
+    totalRooms: GraphQLInt!
+    bookedRooms: GraphQLInt!
+    createdAt: GraphQLTimestamp
+    updatedAt: GraphQLTimestamp
+    deletedAt: GraphQLTimestamp
+}
+
+input IdemandCreateHotelInput
+{
+    id: ID!
+    name: GraphQLString!
+    totalRooms: GraphQLInt!
+    bookedRooms: GraphQLInt!
+}
+
+input IdemandUpdateHotelByIdInput
+{
+    id: ID!
+    name: GraphQLString
+    totalRooms: GraphQLInt
+    bookedRooms: GraphQLInt
+}
+
+input IdemandUpdateHotelsInput
+{
+    id: ID
+    name: GraphQLString
+    totalRooms: GraphQLInt
+    bookedRooms: GraphQLInt
+}
+
+type Query
+{
+    idemandFindHotel(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): IdemandHotel
+
+    idemandFindHotelById(
+        id: ID
+        constraint: QueryStatement
+    ): IdemandHotel
+
+    idemandGetHotels(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [IdemandHotel]!
+
+    idemandPaginateHotels(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): Pagination!
+
+}
+
+type Mutation
+{
+    idemandCreateHotel(
+        payload: IdemandCreateHotelInput!
+    ): IdemandHotel
+
+    idemandCreateHotels(
+        payload: [IdemandCreateHotelInput]!
+    ): Boolean!
+
+    idemandUpdateHotelById(
+        payload: IdemandUpdateHotelByIdInput!
+        constraint: QueryStatement
+    ): IdemandHotel
+
+    idemandUpdateHotels(
+        payload: IdemandUpdateHotelsInput!
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [IdemandHotel]!
+
+    idemandUpsertHotel(
+        payload: IdemandUpdateHotelByIdInput!
+    ): IdemandHotel
+
+    idemandDeleteHotelById(
+        id: ID!
+        constraint: QueryStatement
+    ): IdemandHotel
+
+    idemandDeleteHotels(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [IdemandHotel]!
+
+}

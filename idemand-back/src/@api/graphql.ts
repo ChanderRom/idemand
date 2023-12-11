@@ -20,25 +20,40 @@ export enum CoreSearchKeyLang {
     ietf = "ietf"
 }
 
+export interface IdemandCreateHotelInput {
+    id: string;
+    name: GraphQLString;
+    totalRooms: GraphQLInt;
+    bookedRooms: GraphQLInt;
+}
+
+export interface IdemandUpdateHotelByIdInput {
+    id: string;
+    name?: Nullable<GraphQLString>;
+    totalRooms?: Nullable<GraphQLInt>;
+    bookedRooms?: Nullable<GraphQLInt>;
+}
+
+export interface IdemandUpdateHotelsInput {
+    id?: Nullable<string>;
+    name?: Nullable<GraphQLString>;
+    totalRooms?: Nullable<GraphQLInt>;
+    bookedRooms?: Nullable<GraphQLInt>;
+}
+
 export interface IdemandCreateRoomInput {
     id: string;
     type: GraphQLString;
-    price: GraphQLString;
-    date: GraphQLISODateTime;
 }
 
 export interface IdemandUpdateRoomByIdInput {
     id: string;
     type?: Nullable<GraphQLString>;
-    price?: Nullable<GraphQLString>;
-    date?: Nullable<GraphQLISODateTime>;
 }
 
 export interface IdemandUpdateRoomsInput {
     id?: Nullable<string>;
     type?: Nullable<GraphQLString>;
-    price?: Nullable<GraphQLString>;
-    date?: Nullable<GraphQLISODateTime>;
 }
 
 export interface QueryStatement {
@@ -53,17 +68,21 @@ export interface QueryStatement {
     col?: Nullable<GraphQLString>;
 }
 
-export interface IdemandRoom {
+export interface IdemandHotel {
     id: string;
-    type: GraphQLString;
-    price: GraphQLString;
-    date: GraphQLISODateTime;
+    name: GraphQLString;
+    totalRooms: GraphQLInt;
+    bookedRooms: GraphQLInt;
     createdAt?: Nullable<GraphQLTimestamp>;
     updatedAt?: Nullable<GraphQLTimestamp>;
     deletedAt?: Nullable<GraphQLTimestamp>;
 }
 
 export interface IQuery {
+    idemandFindHotel(query?: Nullable<QueryStatement>, constraint?: Nullable<QueryStatement>): Nullable<IdemandHotel> | Promise<Nullable<IdemandHotel>>;
+    idemandFindHotelById(id?: Nullable<string>, constraint?: Nullable<QueryStatement>): Nullable<IdemandHotel> | Promise<Nullable<IdemandHotel>>;
+    idemandGetHotels(query?: Nullable<QueryStatement>, constraint?: Nullable<QueryStatement>): Nullable<IdemandHotel>[] | Promise<Nullable<IdemandHotel>[]>;
+    idemandPaginateHotels(query?: Nullable<QueryStatement>, constraint?: Nullable<QueryStatement>): Pagination | Promise<Pagination>;
     idemandFindRoom(query?: Nullable<QueryStatement>, constraint?: Nullable<QueryStatement>): Nullable<IdemandRoom> | Promise<Nullable<IdemandRoom>>;
     idemandFindRoomById(id?: Nullable<string>, constraint?: Nullable<QueryStatement>): Nullable<IdemandRoom> | Promise<Nullable<IdemandRoom>>;
     idemandGetRooms(query?: Nullable<QueryStatement>, constraint?: Nullable<QueryStatement>): Nullable<IdemandRoom>[] | Promise<Nullable<IdemandRoom>[]>;
@@ -75,6 +94,13 @@ export interface IQuery {
 }
 
 export interface IMutation {
+    idemandCreateHotel(payload: IdemandCreateHotelInput): Nullable<IdemandHotel> | Promise<Nullable<IdemandHotel>>;
+    idemandCreateHotels(payload: Nullable<IdemandCreateHotelInput>[]): boolean | Promise<boolean>;
+    idemandUpdateHotelById(payload: IdemandUpdateHotelByIdInput, constraint?: Nullable<QueryStatement>): Nullable<IdemandHotel> | Promise<Nullable<IdemandHotel>>;
+    idemandUpdateHotels(payload: IdemandUpdateHotelsInput, query?: Nullable<QueryStatement>, constraint?: Nullable<QueryStatement>): Nullable<IdemandHotel>[] | Promise<Nullable<IdemandHotel>[]>;
+    idemandUpsertHotel(payload: IdemandUpdateHotelByIdInput): Nullable<IdemandHotel> | Promise<Nullable<IdemandHotel>>;
+    idemandDeleteHotelById(id: string, constraint?: Nullable<QueryStatement>): Nullable<IdemandHotel> | Promise<Nullable<IdemandHotel>>;
+    idemandDeleteHotels(query?: Nullable<QueryStatement>, constraint?: Nullable<QueryStatement>): Nullable<IdemandHotel>[] | Promise<Nullable<IdemandHotel>[]>;
     idemandCreateRoom(payload: IdemandCreateRoomInput): Nullable<IdemandRoom> | Promise<Nullable<IdemandRoom>>;
     idemandCreateRooms(payload: Nullable<IdemandCreateRoomInput>[]): boolean | Promise<boolean>;
     idemandUpdateRoomById(payload: IdemandUpdateRoomByIdInput, constraint?: Nullable<QueryStatement>): Nullable<IdemandRoom> | Promise<Nullable<IdemandRoom>>;
@@ -82,6 +108,14 @@ export interface IMutation {
     idemandUpsertRoom(payload: IdemandUpdateRoomByIdInput): Nullable<IdemandRoom> | Promise<Nullable<IdemandRoom>>;
     idemandDeleteRoomById(id: string, constraint?: Nullable<QueryStatement>): Nullable<IdemandRoom> | Promise<Nullable<IdemandRoom>>;
     idemandDeleteRooms(query?: Nullable<QueryStatement>, constraint?: Nullable<QueryStatement>): Nullable<IdemandRoom>[] | Promise<Nullable<IdemandRoom>[]>;
+}
+
+export interface IdemandRoom {
+    id: string;
+    type: GraphQLString;
+    createdAt?: Nullable<GraphQLTimestamp>;
+    updatedAt?: Nullable<GraphQLTimestamp>;
+    deletedAt?: Nullable<GraphQLTimestamp>;
 }
 
 export interface CoreLang {

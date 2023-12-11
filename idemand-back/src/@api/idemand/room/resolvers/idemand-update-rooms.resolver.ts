@@ -1,5 +1,5 @@
 import { IdemandUpdateRoomsHandler } from '@api/idemand/room';
-import { IdemandRoom, IdemandUpdateRoomsInput } from '@app/idemand/room';
+import { IdemandRoom, IdemandUpdateRoomsInput } from '@api/graphql';
 import { QueryStatement, Timezone } from '@aurorajs.dev/core';
 import { Args, Mutation, Resolver } from '@nestjs/graphql';
 

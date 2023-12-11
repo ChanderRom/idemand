@@ -3,8 +3,6 @@ type IdemandRoom
 {
     id: ID!
     type: GraphQLString!
-    price: GraphQLString!
-    date: GraphQLISODateTime!
     createdAt: GraphQLTimestamp
     updatedAt: GraphQLTimestamp
     deletedAt: GraphQLTimestamp
@@ -14,24 +12,18 @@ input IdemandCreateRoomInput
 {
     id: ID!
     type: GraphQLString!
-    price: GraphQLString!
-    date: GraphQLISODateTime!
 }
 
 input IdemandUpdateRoomByIdInput
 {
     id: ID!
     type: GraphQLString
-    price: GraphQLString
-    date: GraphQLISODateTime
 }
 
 input IdemandUpdateRoomsInput
 {
     id: ID
     type: GraphQLString
-    price: GraphQLString
-    date: GraphQLISODateTime
 }
 
 type Query

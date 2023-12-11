@@ -2,9 +2,7 @@
 import { IdemandCreateRoomsCommand } from '@app/idemand/room';
 import { IdemandCreateRoomsService } from '@app/idemand/room/application/create/idemand-create-rooms.service';
 import {
-    IdemandRoomDate,
     IdemandRoomId,
-    IdemandRoomPrice,
     IdemandRoomType,
 } from '@app/idemand/room/domain/value-objects';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
@@ -26,8 +24,6 @@ export class IdemandCreateRoomsCommandHandler implements ICommandHandler<Idemand
                     return {
                         id: new IdemandRoomId(room.id),
                         type: new IdemandRoomType(room.type),
-                        price: new IdemandRoomPrice(room.price),
-                        date: new IdemandRoomDate(room.date),
                     };
                 }),
             command.cQMetadata,

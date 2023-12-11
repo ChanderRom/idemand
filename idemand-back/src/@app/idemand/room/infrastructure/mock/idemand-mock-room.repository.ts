@@ -1,10 +1,8 @@
 import { IdemandIRoomRepository, idemandMockRoomData, IdemandRoom } from '@app/idemand/room';
 import {
     IdemandRoomCreatedAt,
-    IdemandRoomDate,
     IdemandRoomDeletedAt,
     IdemandRoomId,
-    IdemandRoomPrice,
     IdemandRoomType,
     IdemandRoomUpdatedAt,
 } from '@app/idemand/room/domain/value-objects';
@@ -43,8 +41,6 @@ export class IdemandMockRoomRepository extends MockRepository<IdemandRoom> imple
             this.collectionSource.push(IdemandRoom.register(
                 new IdemandRoomId(itemCollection.id),
                 new IdemandRoomType(itemCollection.type),
-                new IdemandRoomPrice(itemCollection.price),
-                new IdemandRoomDate(itemCollection.date),
                 new IdemandRoomCreatedAt(itemCollection.createdAt),
                 new IdemandRoomUpdatedAt(itemCollection.updatedAt),
                 new IdemandRoomDeletedAt(itemCollection.deletedAt),

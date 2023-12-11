@@ -103,38 +103,6 @@ describe('room', () =>
             });
     });
 
-    test('/REST:POST idemand/room/create - Got 400 Conflict, RoomPrice property can not to be null', () =>
-    {
-        return request(app.getHttpServer())
-            .post('/idemand/room/create')
-            .set('Accept', 'application/json')
-            .send({
-                ...mockData[0],
-                price: null,
-            })
-            .expect(400)
-            .then(res =>
-            {
-                expect(res.body.message).toContain('Value for IdemandRoomPrice must be defined, can not be null');
-            });
-    });
-
-    test('/REST:POST idemand/room/create - Got 400 Conflict, RoomDate property can not to be null', () =>
-    {
-        return request(app.getHttpServer())
-            .post('/idemand/room/create')
-            .set('Accept', 'application/json')
-            .send({
-                ...mockData[0],
-                date: null,
-            })
-            .expect(400)
-            .then(res =>
-            {
-                expect(res.body.message).toContain('Value for IdemandRoomDate must be defined, can not be null');
-            });
-    });
-
     test('/REST:POST idemand/room/create - Got 400 Conflict, RoomId property can not to be undefined', () =>
     {
         return request(app.getHttpServer())
@@ -164,38 +132,6 @@ describe('room', () =>
             .then(res =>
             {
                 expect(res.body.message).toContain('Value for IdemandRoomType must be defined, can not be undefined');
-            });
-    });
-
-    test('/REST:POST idemand/room/create - Got 400 Conflict, RoomPrice property can not to be undefined', () =>
-    {
-        return request(app.getHttpServer())
-            .post('/idemand/room/create')
-            .set('Accept', 'application/json')
-            .send({
-                ...mockData[0],
-                price: undefined,
-            })
-            .expect(400)
-            .then(res =>
-            {
-                expect(res.body.message).toContain('Value for IdemandRoomPrice must be defined, can not be undefined');
-            });
-    });
-
-    test('/REST:POST idemand/room/create - Got 400 Conflict, RoomDate property can not to be undefined', () =>
-    {
-        return request(app.getHttpServer())
-            .post('/idemand/room/create')
-            .set('Accept', 'application/json')
-            .send({
-                ...mockData[0],
-                date: undefined,
-            })
-            .expect(400)
-            .then(res =>
-            {
-                expect(res.body.message).toContain('Value for IdemandRoomDate must be defined, can not be undefined');
             });
     });
 
@@ -389,8 +325,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                         }
                     }
                 `,
@@ -458,8 +392,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }
@@ -490,8 +422,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                         }
                     }
                 `,
@@ -522,8 +452,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }
@@ -562,8 +490,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }
@@ -600,8 +526,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }
@@ -633,8 +557,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }
@@ -664,8 +586,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }
@@ -700,8 +620,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }
@@ -734,8 +652,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }
@@ -773,8 +689,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }
@@ -806,8 +720,6 @@ describe('room', () =>
                         {
                             id
                             type
-                            price
-                            date
                             createdAt
                             updatedAt
                         }

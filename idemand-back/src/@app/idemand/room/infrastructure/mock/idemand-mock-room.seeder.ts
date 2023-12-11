@@ -1,10 +1,8 @@
 import { idemandMockRoomData, IdemandRoom } from '@app/idemand/room';
 import {
     IdemandRoomCreatedAt,
-    IdemandRoomDate,
     IdemandRoomDeletedAt,
     IdemandRoomId,
-    IdemandRoomPrice,
     IdemandRoomType,
     IdemandRoomUpdatedAt,
 } from '@app/idemand/room/domain/value-objects';
@@ -33,8 +31,6 @@ export class IdemandMockRoomSeeder extends MockSeeder<IdemandRoom>
                 IdemandRoom.register(
                     new IdemandRoomId(room.id),
                     new IdemandRoomType(room.type),
-                    new IdemandRoomPrice(room.price),
-                    new IdemandRoomDate(room.date),
                     new IdemandRoomCreatedAt({ currentTimestamp: true }),
                     new IdemandRoomUpdatedAt({ currentTimestamp: true }),
                     new IdemandRoomDeletedAt(null),

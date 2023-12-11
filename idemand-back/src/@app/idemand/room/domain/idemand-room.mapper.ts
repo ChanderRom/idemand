@@ -1,10 +1,8 @@
 import { IdemandRoom, IdemandRoomResponse } from '@app/idemand/room';
 import {
     IdemandRoomCreatedAt,
-    IdemandRoomDate,
     IdemandRoomDeletedAt,
     IdemandRoomId,
-    IdemandRoomPrice,
     IdemandRoomType,
     IdemandRoomUpdatedAt,
 } from '@app/idemand/room/domain/value-objects';
@@ -63,8 +61,6 @@ export class IdemandRoomMapper implements IMapper
         return IdemandRoom.register(
             new IdemandRoomId(room.id, { undefinable: true }),
             new IdemandRoomType(room.type, { undefinable: true }),
-            new IdemandRoomPrice(room.price, { undefinable: true }),
-            new IdemandRoomDate(room.date, { undefinable: true }),
             new IdemandRoomCreatedAt(room.createdAt, { undefinable: true }, { addTimezone: cQMetadata?.timezone }),
             new IdemandRoomUpdatedAt(room.updatedAt, { undefinable: true }, { addTimezone: cQMetadata?.timezone }),
             new IdemandRoomDeletedAt(room.deletedAt, { undefinable: true }, { addTimezone: cQMetadata?.timezone }),
@@ -78,8 +74,6 @@ export class IdemandRoomMapper implements IMapper
         return new IdemandRoomResponse(
             room.id.value,
             room.type.value,
-            room.price.value,
-            room.date.value,
             room.createdAt.value,
             room.updatedAt.value,
             room.deletedAt.value,

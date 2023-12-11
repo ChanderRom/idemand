@@ -2,10 +2,8 @@
 import { IdemandCreatedRoomEvent, IdemandDeletedRoomEvent, IdemandUpdatedRoomEvent } from '@app/idemand/room';
 import {
     IdemandRoomCreatedAt,
-    IdemandRoomDate,
     IdemandRoomDeletedAt,
     IdemandRoomId,
-    IdemandRoomPrice,
     IdemandRoomType,
     IdemandRoomUpdatedAt,
 } from '@app/idemand/room/domain/value-objects';
@@ -16,8 +14,6 @@ export class IdemandRoom extends AggregateRoot
 {
     id: IdemandRoomId;
     type: IdemandRoomType;
-    price: IdemandRoomPrice;
-    date: IdemandRoomDate;
     createdAt: IdemandRoomCreatedAt;
     updatedAt: IdemandRoomUpdatedAt;
     deletedAt: IdemandRoomDeletedAt;
@@ -25,8 +21,6 @@ export class IdemandRoom extends AggregateRoot
     constructor(
         id: IdemandRoomId,
         type: IdemandRoomType,
-        price: IdemandRoomPrice,
-        date: IdemandRoomDate,
         createdAt: IdemandRoomCreatedAt,
         updatedAt: IdemandRoomUpdatedAt,
         deletedAt: IdemandRoomDeletedAt,
@@ -35,8 +29,6 @@ export class IdemandRoom extends AggregateRoot
         super();
         this.id = id;
         this.type = type;
-        this.price = price;
-        this.date = date;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
         this.deletedAt = deletedAt;
@@ -45,8 +37,6 @@ export class IdemandRoom extends AggregateRoot
     static register(
         id: IdemandRoomId,
         type: IdemandRoomType,
-        price: IdemandRoomPrice,
-        date: IdemandRoomDate,
         createdAt: IdemandRoomCreatedAt,
         updatedAt: IdemandRoomUpdatedAt,
         deletedAt: IdemandRoomDeletedAt,
@@ -55,8 +45,6 @@ export class IdemandRoom extends AggregateRoot
         return new IdemandRoom(
             id,
             type,
-            price,
-            date,
             createdAt,
             updatedAt,
             deletedAt,
@@ -69,8 +57,6 @@ export class IdemandRoom extends AggregateRoot
             new IdemandCreatedRoomEvent(
                 room.id.value,
                 room.type.value,
-                room.price.value,
-                room.date.value,
                 room.createdAt?.value,
                 room.updatedAt?.value,
                 room.deletedAt?.value,
@@ -84,8 +70,6 @@ export class IdemandRoom extends AggregateRoot
             new IdemandUpdatedRoomEvent(
                 room.id?.value,
                 room.type?.value,
-                room.price?.value,
-                room.date?.value,
                 room.createdAt?.value,
                 room.updatedAt?.value,
                 room.deletedAt?.value,
@@ -99,8 +83,6 @@ export class IdemandRoom extends AggregateRoot
             new IdemandDeletedRoomEvent(
                 room.id.value,
                 room.type.value,
-                room.price.value,
-                room.date.value,
                 room.createdAt?.value,
                 room.updatedAt?.value,
                 room.deletedAt?.value,
@@ -113,8 +95,6 @@ export class IdemandRoom extends AggregateRoot
         return {
             id: this.id.value,
             type: this.type.value,
-            price: this.price.value,
-            date: this.date.value,
             createdAt: this.createdAt?.value,
             updatedAt: this.updatedAt?.value,
             deletedAt: this.deletedAt?.value,
@@ -127,8 +107,6 @@ export class IdemandRoom extends AggregateRoot
         return {
             id: this.id.value,
             type: this.type.value,
-            price: this.price.value,
-            date: this.date.value,
             createdAt: this.createdAt?.value,
             updatedAt: this.updatedAt?.value,
             deletedAt: this.deletedAt?.value,

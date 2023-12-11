@@ -17,18 +17,6 @@ export class IdemandRoomDto
 
     @ApiProperty({
         type       : String,
-        description: 'price [input here api field description]',
-    })
-    price: string;
-
-    @ApiProperty({
-        type       : String,
-        description: 'date [input here api field description]',
-    })
-    date: string;
-
-    @ApiProperty({
-        type       : String,
         description: 'createdAt [input here api field description]',
     })
     createdAt?: string;

@@ -6,8 +6,6 @@ export class IdemandUpdateRoomByIdCommand
         public readonly payload: {
             id: string;
             type?: string;
-            price?: string;
-            date?: string;
         },
         public readonly constraint?: QueryStatement,
         public readonly cQMetadata?: CQMetadata,

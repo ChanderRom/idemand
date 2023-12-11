@@ -2,9 +2,7 @@
 import { IdemandUpdateRoomsCommand } from '@app/idemand/room';
 import { IdemandUpdateRoomsService } from '@app/idemand/room/application/update/idemand-update-rooms.service';
 import {
-    IdemandRoomDate,
     IdemandRoomId,
-    IdemandRoomPrice,
     IdemandRoomType,
 } from '@app/idemand/room/domain/value-objects';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
@@ -23,8 +21,6 @@ export class IdemandUpdateRoomsCommandHandler implements ICommandHandler<Idemand
             {
                 id: new IdemandRoomId(command.payload.id, { undefinable: true }),
                 type: new IdemandRoomType(command.payload.type, { undefinable: true }),
-                price: new IdemandRoomPrice(command.payload.price, { undefinable: true }),
-                date: new IdemandRoomDate(command.payload.date, { undefinable: true }),
             },
             command.queryStatement,
             command.constraint,

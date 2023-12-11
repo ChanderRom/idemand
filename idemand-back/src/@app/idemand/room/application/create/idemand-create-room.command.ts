@@ -6,8 +6,6 @@ export class IdemandCreateRoomCommand
         public readonly payload: {
             id: string;
             type: string;
-            price: string;
-            date: string;
         },
         public readonly cQMetadata?: CQMetadata,
     ) {}

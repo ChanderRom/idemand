@@ -14,8 +14,8 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation ($payload:IdemandCreateRoomInput!)\n{\n\tidemandCreateRoom (payload:$payload)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t}\n}",
-                        "variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"type\": \"3\", \n\t\t\"price\": \"2\", \n\t\t\"date\": \"2023-12-10\"\n\t}\n}"
+						"query": "mutation ($payload:IdemandCreateRoomInput!)\n{\n\tidemandCreateRoom (payload:$payload)\n\t{\n\t\tid\n\t\ttype\n\t}\n}",
+                        "variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"type\": \"p\"\n\t}\n}"
 					}
 				},
 				"url": {
@@ -39,7 +39,7 @@
 					"mode": "graphql",
 					"graphql": {
 						"query": "mutation ($payload:[IdemandCreateRoomInput]!)\n{\n\tidemandCreateRooms (payload:$payload)\n}",
-						"variables": "{\n\t\"payload\":\n\t[\n\t\t{\n\t\t\t\"id\": \"98ff2f61-9925-4758-b72f-efb64812f732\", \n\t\t\t\"type\": \"x\", \n\t\t\t\"price\": \"i\", \n\t\t\t\"date\": \"2023-12-11\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"24023dc6-f507-4341-b67e-e20283ecbb42\", \n\t\t\t\"type\": \"9\", \n\t\t\t\"price\": \"j\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"3b15a25a-d18c-4f80-a3cd-9c8daf8b5a72\", \n\t\t\t\"type\": \"h\", \n\t\t\t\"price\": \"q\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"22629391-ae1c-4550-9d80-cba3a2f013db\", \n\t\t\t\"type\": \"b\", \n\t\t\t\"price\": \"e\", \n\t\t\t\"date\": \"2023-12-11\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"653f38a9-15d8-426f-9843-564bae618001\", \n\t\t\t\"type\": \"e\", \n\t\t\t\"price\": \"m\", \n\t\t\t\"date\": \"2023-12-11\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"d2fe150b-dd8a-4c4d-8868-b6cb060590c9\", \n\t\t\t\"type\": \"a\", \n\t\t\t\"price\": \"2\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"15bae974-76f3-4f55-bfb2-a904afae6dd5\", \n\t\t\t\"type\": \"0\", \n\t\t\t\"price\": \"u\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"bfb3fa6c-8877-447c-891c-46336218f904\", \n\t\t\t\"type\": \"5\", \n\t\t\t\"price\": \"b\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"8e2b058b-5e3b-46e9-92b5-af18ab3553da\", \n\t\t\t\"type\": \"u\", \n\t\t\t\"price\": \"p\", \n\t\t\t\"date\": \"2023-12-10\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"d4994637-4a72-49ef-88da-6e831e68b19c\", \n\t\t\t\"type\": \"g\", \n\t\t\t\"price\": \"g\", \n\t\t\t\"date\": \"2023-12-11\"\n\t\t}\n\t]\n}"
+						"variables": "{\n\t\"payload\":\n\t[\n\t\t{\n\t\t\t\"id\": \"51642b0e-d323-4a99-b93e-bcbaf3637cf6\", \n\t\t\t\"type\": \"p\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"4614926a-53ea-4684-84dc-c3662a071b15\", \n\t\t\t\"type\": \"r\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"17515eaf-3b46-414f-81d0-b8642aade506\", \n\t\t\t\"type\": \"5\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"a72ea8a8-3d28-4329-b446-2cdc576ffbac\", \n\t\t\t\"type\": \"8\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"c3842ab6-7be0-4b04-bc62-6d76af41d1a3\", \n\t\t\t\"type\": \"5\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"711d403d-757d-4a85-a41c-ea1d16786900\", \n\t\t\t\"type\": \"v\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"25bab8d7-b6b6-443f-a198-a00ea12adf45\", \n\t\t\t\"type\": \"p\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"aa8be2ef-8371-430a-b0d5-03ae91a69df8\", \n\t\t\t\"type\": \"z\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"403ca66a-ed58-44e2-9c49-06524113cca6\", \n\t\t\t\"type\": \"3\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"0c8b2808-9e39-40b7-8dcb-ea17e438940a\", \n\t\t\t\"type\": \"8\"\n\t\t}\n\t]\n}"
 					}
 				},
 				"url": {
@@ -88,7 +88,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query ($query:QueryStatement)\n{\n\tidemandGetRooms (query: $query)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"query": "query ($query:QueryStatement)\n{\n\tidemandGetRooms (query: $query)\n\t{\n\t\tid\n\t\ttype\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
 						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{ \n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
 					}
 				},
@@ -113,7 +113,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query ($query:QueryStatement)\n{\n\tidemandFindRoom (query: $query)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"query": "query ($query:QueryStatement)\n{\n\tidemandFindRoom (query: $query)\n\t{\n\t\tid\n\t\ttype\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
 						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
 					}
 				},
@@ -138,7 +138,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query ($id:ID)\n{\n\tidemandFindRoomById (id:$id)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"query": "query ($id:ID)\n{\n\tidemandFindRoomById (id:$id)\n\t{\n\t\tid\n\t\ttype\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
 						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
 					}
 				},
@@ -163,8 +163,8 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation ($payload:IdemandUpdateRoomInput!)\n{\n\tidemandUpdateRoom (payload:$payload)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
-						"variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"type\": \"a\", \n\t\t\"price\": \"j\", \n\t\t\"date\": \"2023-12-10\"\n\t}\n}"
+						"query": "mutation ($payload:IdemandUpdateRoomInput!)\n{\n\tidemandUpdateRoom (payload:$payload)\n\t{\n\t\tid\n\t\ttype\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"type\": \"7\"\n\t}\n}"
 					}
 				},
 				"url": {
@@ -188,7 +188,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation ($id:ID!)\n{\n\tidemandDeleteRoomById (id:$id)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"query": "mutation ($id:ID!)\n{\n\tidemandDeleteRoomById (id:$id)\n\t{\n\t\tid\n\t\ttype\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
 						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
 					}
 				},
@@ -213,7 +213,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation ($query:QueryStatement)\n{\n\tidemandDeleteRooms (query: $query)\n\t{\n\t\tid\n\t\ttype\n\t\tprice\n\t\tdate\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"query": "mutation ($query:QueryStatement)\n{\n\tidemandDeleteRooms (query: $query)\n\t{\n\t\tid\n\t\ttype\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
 						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\":\n\t\t\t{\n\t\t\t\t\"[substring]\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}"
 					}
 				},
@@ -242,7 +242,7 @@
 					}				],
 				"body": {
 					"mode"  : "raw",
-					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"type\": \"d\", \n\t\"price\": \"1\", \n\t\"date\": \"2023-12-11\"\n}",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"type\": \"a\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -276,7 +276,7 @@
 					}				],
 				"body": {
 					"mode"  : "raw",
-					"raw"   : "[\n\t{\n\t\t\"id\": \"1fb1a423-ae5a-4745-9c74-667814c9cdcc\", \n\t\t\"type\": \"1\", \n\t\t\"price\": \"y\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"fee93522-409a-4a8f-8b9b-c6a490bdd850\", \n\t\t\"type\": \"3\", \n\t\t\"price\": \"j\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"ed52fabc-8e80-4025-881d-0c317913490f\", \n\t\t\"type\": \"m\", \n\t\t\"price\": \"q\", \n\t\t\"date\": \"2023-12-11\"\n\t}, \n\t{\n\t\t\"id\": \"b53842a6-65ea-4fb2-a9a8-08ce76432faa\", \n\t\t\"type\": \"4\", \n\t\t\"price\": \"n\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"a100680d-f51f-4a2e-9989-6bb456b5ad0a\", \n\t\t\"type\": \"c\", \n\t\t\"price\": \"k\", \n\t\t\"date\": \"2023-12-11\"\n\t}, \n\t{\n\t\t\"id\": \"998c4535-7e39-4eea-8a89-97746abc3b84\", \n\t\t\"type\": \"y\", \n\t\t\"price\": \"j\", \n\t\t\"date\": \"2023-12-11\"\n\t}, \n\t{\n\t\t\"id\": \"0ab797b3-fe59-4070-9527-1b9df3d00d50\", \n\t\t\"type\": \"z\", \n\t\t\"price\": \"m\", \n\t\t\"date\": \"2023-12-11\"\n\t}, \n\t{\n\t\t\"id\": \"fa212d19-78c4-46b4-8b1b-36139067c931\", \n\t\t\"type\": \"1\", \n\t\t\"price\": \"s\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"001ee8b7-e912-4706-beec-1ae961a02de0\", \n\t\t\"type\": \"8\", \n\t\t\"price\": \"n\", \n\t\t\"date\": \"2023-12-10\"\n\t}, \n\t{\n\t\t\"id\": \"6d3f2cfc-b45f-4082-9002-ed2df608b667\", \n\t\t\"type\": \"k\", \n\t\t\"price\": \"v\", \n\t\t\"date\": \"2023-12-10\"\n\t}\n]",
+					"raw"   : "[\n\t{\n\t\t\"id\": \"d5e92662-f6e4-47fc-95bb-5cf8816f3a51\", \n\t\t\"type\": \"k\"\n\t}, \n\t{\n\t\t\"id\": \"1be11a20-adbe-4b1d-93df-681086da1cd6\", \n\t\t\"type\": \"p\"\n\t}, \n\t{\n\t\t\"id\": \"ab23c005-5cde-4850-9d4c-822a1f15fc01\", \n\t\t\"type\": \"j\"\n\t}, \n\t{\n\t\t\"id\": \"67afc105-2cb8-45f6-8454-e19cc1dc39bc\", \n\t\t\"type\": \"x\"\n\t}, \n\t{\n\t\t\"id\": \"dd2b9be5-e78c-4f37-ba25-4a74bf478235\", \n\t\t\"type\": \"0\"\n\t}, \n\t{\n\t\t\"id\": \"89faf2f4-c875-47a0-8b72-d82f08dbfe7f\", \n\t\t\"type\": \"g\"\n\t}, \n\t{\n\t\t\"id\": \"4e95d553-a918-4be3-970e-aa5c9c13805b\", \n\t\t\"type\": \"q\"\n\t}, \n\t{\n\t\t\"id\": \"fd3ae9c9-5d11-4724-a6fd-2dec1ccc048b\", \n\t\t\"type\": \"u\"\n\t}, \n\t{\n\t\t\"id\": \"ca959bb0-6d6b-4072-b37d-ac9af0e91049\", \n\t\t\"type\": \"t\"\n\t}, \n\t{\n\t\t\"id\": \"11f7a72a-caa4-421a-be12-931228f989d7\", \n\t\t\"type\": \"y\"\n\t}\n]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -459,7 +459,7 @@
 					}				],
 				"body": {
 					"mode": "raw",
-					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"type\": \"v\", \n\t\"price\": \"e\", \n\t\"date\": \"2023-12-10\"\n}",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"type\": \"l\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"

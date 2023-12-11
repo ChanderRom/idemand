@@ -1,10 +1,8 @@
 import { IdemandAddRoomsContextEvent, IdemandIRoomRepository, IdemandRoom } from '@app/idemand/room';
 import {
     IdemandRoomCreatedAt,
-    IdemandRoomDate,
     IdemandRoomDeletedAt,
     IdemandRoomId,
-    IdemandRoomPrice,
     IdemandRoomType,
     IdemandRoomUpdatedAt,
 } from '@app/idemand/room/domain/value-objects';
@@ -24,8 +22,6 @@ export class IdemandCreateRoomsService
         payload: {
             id: IdemandRoomId;
             type: IdemandRoomType;
-            price: IdemandRoomPrice;
-            date: IdemandRoomDate;
         } [],
         cQMetadata?: CQMetadata,
     ): Promise<void>
@@ -34,8 +30,6 @@ export class IdemandCreateRoomsService
         const aggregateRooms = payload.map(room => IdemandRoom.register(
             room.id,
             room.type,
-            room.price,
-            room.date,
             new IdemandRoomCreatedAt({ currentTimestamp: true }),
             new IdemandRoomUpdatedAt({ currentTimestamp: true }),
             null, // deleteAt

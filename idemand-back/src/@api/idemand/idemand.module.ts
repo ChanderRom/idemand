@@ -4,6 +4,7 @@ import { SharedModule } from '@aurora/shared.module';
 import { IdemandSeeder } from './idemand.seeder';
 import { IdemandModels, IdemandHandlers, IdemandServices, IdemandRepositories, IdemandSagas } from '../../@app/idemand';
 import { IdemandRoomApiControllers, IdemandRoomApiResolvers, IdemandRoomApiHandlers, IdemandRoomApiServices } from './room';
+import { IdemandHotelApiControllers, IdemandHotelApiResolvers, IdemandHotelApiHandlers, IdemandHotelApiServices } from './hotel';
 
 @Module({
     imports: [
@@ -13,7 +14,8 @@ import { IdemandRoomApiControllers, IdemandRoomApiResolvers, IdemandRoomApiHandl
             ])
     ],
     controllers: [
-        ...IdemandRoomApiControllers
+        ...IdemandRoomApiControllers,
+        ...IdemandHotelApiControllers
     ],
     providers: [
         IdemandSeeder,
@@ -23,7 +25,10 @@ import { IdemandRoomApiControllers, IdemandRoomApiResolvers, IdemandRoomApiHandl
         ...IdemandSagas,
         ...IdemandRoomApiResolvers,
         ...IdemandRoomApiHandlers,
-        ...IdemandRoomApiServices
+        ...IdemandRoomApiServices,
+        ...IdemandHotelApiResolvers,
+        ...IdemandHotelApiHandlers,
+        ...IdemandHotelApiServices
     ],
 })
 export class IdemandModule {}

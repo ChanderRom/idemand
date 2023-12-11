@@ -11,11 +11,11 @@
         },
         {
             "path": "src/@app/idemand/hotel/application/create/idemand-create-hotels.command-handler.ts",
-            "integrity": "sha1:efdbee89094dc67caeae1d2fc490e75381752896"
+            "integrity": "sha1:d4ea66f55f3ce50a47a70e19624c192f0fcccc5c"
         },
         {
             "path": "src/@app/idemand/hotel/application/create/idemand-create-hotels.command.ts",
-            "integrity": "sha1:96676971bd11de886113e6b2179d9604e282dd70"
+            "integrity": "sha1:91d1f94e85f883acffd2842f725c9622db3aabdc"
         },
         {
             "path": "src/@app/idemand/hotel/application/create/idemand-create-hotels.service.spec.ts",
@@ -23,27 +23,27 @@
         },
         {
             "path": "src/@app/idemand/hotel/application/create/idemand-create-hotels.service.ts",
-            "integrity": "sha1:8818b0d18cd5dd80ebf315e16d61431b80e0c4cb"
+            "integrity": "sha1:c27542e9835e6a8b06dd46d696fa7a5e5197689e"
         },
         {
             "path": "src/@app/idemand/hotel/application/create/idemand-create-hotel.command-handler.spec.ts",
-            "integrity": "sha1:b08884321911b87732c3dd8d91a40debb0440a8d"
+            "integrity": "sha1:0d55237974f82be9e04aa6cd6915f448f777ebca"
         },
         {
             "path": "src/@app/idemand/hotel/application/create/idemand-create-hotel.command-handler.ts",
-            "integrity": "sha1:d080aceda42d7e0afd9c976380fbd98a4ccb0107"
+            "integrity": "sha1:ada6a0b8b0863f7c377fd0968a4866b830c16d08"
         },
         {
             "path": "src/@app/idemand/hotel/application/create/idemand-create-hotel.command.ts",
-            "integrity": "sha1:51c54a1f6d63da2abd156a87fa91723f09611b97"
+            "integrity": "sha1:074bd238c113e4d2450645c5d8003bd4335e8ab3"
         },
         {
             "path": "src/@app/idemand/hotel/application/create/idemand-create-hotel.service.spec.ts",
-            "integrity": "sha1:b01877e566d2cd261752debd212acf941973d742"
+            "integrity": "sha1:e9960df10b384cec982611883ab15e27148695cd"
         },
         {
             "path": "src/@app/idemand/hotel/application/create/idemand-create-hotel.service.ts",
-            "integrity": "sha1:e846aaf460f04a8379f9f80a0bef8dea9026e050"
+            "integrity": "sha1:3980da8eac1ebdc3b2889aad8ea1aa61cee11d88"
         },
         {
             "path": "src/@app/idemand/hotel/application/delete/idemand-delete-hotels.command-handler.spec.ts",
@@ -87,7 +87,7 @@
         },
         {
             "path": "src/@app/idemand/hotel/application/events/idemand-add-hotels-context.event.ts",
-            "integrity": "sha1:2a53538dd884ca45c64965d7d55563facb693a35"
+            "integrity": "sha1:6c7236eddb4bf6abe6de4e7d90e214098a2f4a80"
         },
         {
             "path": "src/@app/idemand/hotel/application/events/idemand-created-hotels.event-handler.ts",
@@ -103,7 +103,7 @@
         },
         {
             "path": "src/@app/idemand/hotel/application/events/idemand-created-hotel.event.ts",
-            "integrity": "sha1:f45b26c8fdaa31f8355d65c2a3c35f6ea241b670"
+            "integrity": "sha1:11b10b3e189939843215b458ccbe852cc8bea499"
         },
         {
             "path": "src/@app/idemand/hotel/application/events/idemand-deleted-hotels.event-handler.ts",
@@ -119,7 +119,7 @@
         },
         {
             "path": "src/@app/idemand/hotel/application/events/idemand-deleted-hotel.event.ts",
-            "integrity": "sha1:53ff04e6b8743e909c9ffb5efc354f05cb95a6e2"
+            "integrity": "sha1:17f025cded9f1acb28bb76b50e2a1e2e8e4a02da"
         },
         {
             "path": "src/@app/idemand/hotel/application/events/idemand-updated-hotels.event-handler.ts",
@@ -135,7 +135,7 @@
         },
         {
             "path": "src/@app/idemand/hotel/application/events/idemand-updated-hotel.event.ts",
-            "integrity": "sha1:499a1ede662c47e2fc3bf5c79cfd860c549ff3ac"
+            "integrity": "sha1:46496c8ad416571165576e4ea8e03af55320861b"
         },
         {
             "path": "src/@app/idemand/hotel/application/find/idemand-find-hotel-by-id.query-handler.spec.ts",
@@ -243,75 +243,75 @@
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotels.command-handler.spec.ts",
-            "integrity": "sha1:896fef0a76795063f3874b1f4dae6f6c59c5c5d3"
+            "integrity": "sha1:e6f01b490185dd2e2b186a07da90df0d98b169c9"
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotels.command-handler.ts",
-            "integrity": "sha1:130a97223d02ccd08de27a7b96ca64c9e0db986a"
+            "integrity": "sha1:6d077390dea91fce7c961d48c0c3e7ab68f61bc6"
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotels.command.ts",
-            "integrity": "sha1:f7288b9d679dadb8aebb52cba1fad8dc89e273d2"
+            "integrity": "sha1:d4bd2da838062fc251a5a3156e2f82cd4fe91134"
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotels.service.spec.ts",
-            "integrity": "sha1:cff2bec84dbce7e356042f325a19c636e969b4b3"
+            "integrity": "sha1:3b232094414b9639758a4552dabce3a283a22713"
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotels.service.ts",
-            "integrity": "sha1:8cadebafc579bc92c6ca1b0da4dd7bce0982a513"
+            "integrity": "sha1:a306c88ef7bfdc341b57397de5bad7be8fd13e78"
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotel-by-id.command-handler.spec.ts",
-            "integrity": "sha1:3bda7259c850fdb93279560b653d27e126bb292f"
+            "integrity": "sha1:18f913ed25d43f0341ae7250e6e371bea4314c96"
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotel-by-id.command-handler.ts",
-            "integrity": "sha1:ac57c34c332012cd8b737b4a2f711a2d51bac6b6"
+            "integrity": "sha1:f40f29fba9b8204253e4565e0225bd1c30b527dc"
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotel-by-id.command.ts",
-            "integrity": "sha1:1b9dbe98635d84c46989935e3e61b5f589fbe068"
+            "integrity": "sha1:a6adbea1c08f7e26d90167cf1a30584d1c8ca0f7"
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotel-by-id.service.spec.ts",
-            "integrity": "sha1:a77ea976fb4e4dd026978faf436840bfe704c99e"
+            "integrity": "sha1:7519e3ab4cc88dc4c625c7fb771d3c060bd09841"
         },
         {
             "path": "src/@app/idemand/hotel/application/update/idemand-update-hotel-by-id.service.ts",
-            "integrity": "sha1:3b629f1ef08d24846ac612539c2a36c97f276475"
+            "integrity": "sha1:b8d4ddfa6786f8116108179d7ba31f90d551dcf1"
         },
         {
             "path": "src/@app/idemand/hotel/application/upsert/idemand-upsert-hotel.command-handler.spec.ts",
-            "integrity": "sha1:d58a88d0824afad2ea055b456b35cfd16e5aa7bf"
+            "integrity": "sha1:c078ee75df6e196221b0aace6355b16aa76817ea"
         },
         {
             "path": "src/@app/idemand/hotel/application/upsert/idemand-upsert-hotel.command-handler.ts",
-            "integrity": "sha1:b976e03bd8e9be566c3683c65c3f16c542c1f42b"
+            "integrity": "sha1:83922df5eec572ccfb1a84cb8776f38b7ae9dbb8"
         },
         {
             "path": "src/@app/idemand/hotel/application/upsert/idemand-upsert-hotel.command.ts",
-            "integrity": "sha1:488ede62dadbacd32240db1a76e2943eefd9bd48"
+            "integrity": "sha1:25e72452c58094ffbbd9164fc53df2c5c396821e"
         },
         {
             "path": "src/@app/idemand/hotel/application/upsert/idemand-upsert-hotel.service.spec.ts",
-            "integrity": "sha1:2158156ea0a3917be077c4cd5e3393d6f89e6c64"
+            "integrity": "sha1:346609a7433585c4521dcdff82406e0cef9ef599"
         },
         {
             "path": "src/@app/idemand/hotel/application/upsert/idemand-upsert-hotel.service.ts",
-            "integrity": "sha1:53c8a47a785d3bf81c15f79eb05c6ee083e55298"
+            "integrity": "sha1:2a1a63bd03065de74587ebf5775601fbbfa7f001"
         },
         {
             "path": "src/@app/idemand/hotel/domain/value-objects/index.ts",
-            "integrity": "sha1:71d98a6b694cc9c0780281b0e4229f968e860de7"
+            "integrity": "sha1:415d489bad1d3d05f21f6bf310b43756e61117f2"
         },
         {
             "path": "src/@app/idemand/hotel/domain/idemand-hotel.aggregate.ts",
-            "integrity": "sha1:17c93bf3984612e9e383208e64a20228545d52cf"
+            "integrity": "sha1:f001bdc127f7e94f79c8adb12d7a94a76af9e12b"
         },
         {
             "path": "src/@app/idemand/hotel/domain/idemand-hotel.mapper.ts",
-            "integrity": "sha1:089d1f7232c537c16ab654c639baa2317b881671"
+            "integrity": "sha1:dab5628f149800002bef7224eb3f7134d3cb43d2"
         },
         {
             "path": "src/@app/idemand/hotel/domain/idemand-hotel.repository.ts",
@@ -319,7 +319,7 @@
         },
         {
             "path": "src/@app/idemand/hotel/domain/idemand-hotel.response.ts",
-            "integrity": "sha1:624f275aabc6e2db968c1c83d254bbe3b92a13f2"
+            "integrity": "sha1:8fca799808e4accc61663b1a7c5bff790c453866"
         },
         {
             "path": "src/@app/idemand/hotel/index.ts",
@@ -327,19 +327,19 @@
         },
         {
             "path": "src/@app/idemand/hotel/infrastructure/mock/idemand-mock-hotel.data.ts",
-            "integrity": "sha1:7f4fb8b6564ac7489c9c8fdfae84ea57b9522544"
+            "integrity": "sha1:7c0dee1946cb8de5a5ed0eae169c51b389fa985a"
         },
         {
             "path": "src/@app/idemand/hotel/infrastructure/mock/idemand-mock-hotel.repository.ts",
-            "integrity": "sha1:eab9dad9f9db3af0cf5710ce69edbd5e51887fa4"
+            "integrity": "sha1:adda819da52da564f69326129a7309f5ca999f98"
         },
         {
             "path": "src/@app/idemand/hotel/infrastructure/mock/idemand-mock-hotel.seeder.ts",
-            "integrity": "sha1:421023ccfaa8d7183ac6112037e4f9ba3447e31d"
+            "integrity": "sha1:27f567c2377923080e0a7de04dafb9954404badf"
         },
         {
             "path": "src/@app/idemand/hotel/infrastructure/sequelize/idemand-sequelize-hotel.model.ts",
-            "integrity": "sha1:4b67e9e6cc5686b43e012a75439d0c3b77300dd6"
+            "integrity": "sha1:7fb232a1e6fc42e180eb71af9aa741991079200e"
         },
         {
             "path": "src/@app/idemand/hotel/infrastructure/sequelize/idemand-sequelize-hotel.repository.ts",
@@ -350,16 +350,16 @@
             "integrity": "sha1:f2834565b1769990ee76aa1a7251ef818fcf4f5a"
         },
         {
+            "path": "src/@app/idemand/hotel/domain/value-objects/idemand-hotel-name.ts",
+            "integrity": "sha1:d23f9bf9a80b235e702cabd6ed5ada7b0b70f3fa"
+        },
+        {
             "path": "src/@app/idemand/hotel/domain/value-objects/idemand-hotel-total-rooms.ts",
-            "integrity": "sha1:c13a9e543cfa707928734f26e7d3da292055a747"
+            "integrity": "sha1:ded66f2675d9dde84c35ab3e676972b253f2d516"
         },
         {
             "path": "src/@app/idemand/hotel/domain/value-objects/idemand-hotel-booked-rooms.ts",
-            "integrity": "sha1:fcceabb3cfa2c86c0c5b91a4f02c685857f97f4d"
-        },
-        {
-            "path": "src/@app/idemand/hotel/domain/value-objects/idemand-hotel-percentage.ts",
-            "integrity": "sha1:876383f32b1b1cbb18c46f81106b52655e6a9aa3"
+            "integrity": "sha1:89d34b019871541cbacfd17aa47708e397fea2a7"
         },
         {
             "path": "src/@app/idemand/hotel/domain/value-objects/idemand-hotel-created-at.ts",
@@ -471,23 +471,23 @@
         },
         {
             "path": "src/@api/idemand/hotel/dto/idemand-create-hotel.dto.ts",
-            "integrity": "sha1:6878b9e044e9e8c708c0f1718166d56060a8bc98"
+            "integrity": "sha1:b5691f82f4e2f7ac97a272db1c25e5a234642cc3"
         },
         {
             "path": "src/@api/idemand/hotel/dto/idemand-update-hotels.dto.ts",
-            "integrity": "sha1:dcbe3fde3d2405885d46296386b00cded7e50d77"
+            "integrity": "sha1:7a10baba4a0205ec06505d85855cbf2ac7139846"
         },
         {
             "path": "src/@api/idemand/hotel/dto/idemand-update-hotel-by-id.dto.ts",
-            "integrity": "sha1:28bf7ea2917c32520292a655408b02ed2e116285"
+            "integrity": "sha1:c22d5b9e577ed519d9013ff2fd6548ab6c92f2d1"
         },
         {
             "path": "src/@api/idemand/hotel/dto/idemand-hotel.dto.ts",
-            "integrity": "sha1:916e4cecd47329439154ef29e214a93ae4a37c0e"
+            "integrity": "sha1:9bf5d364c88435d960889d47d17c57a266e59152"
         },
         {
             "path": "src/@api/idemand/hotel/graphql/idemand-hotel.graphql",
-            "integrity": "sha1:58ee55526f6160a08debe64ec263e3180f244db2"
+            "integrity": "sha1:df39eacc11235b1231984477a113fcdae00d1755"
         },
         {
             "path": "src/@api/idemand/hotel/handlers/idemand-create-hotels.handler.spec.ts",
@@ -675,11 +675,11 @@
         },
         {
             "path": "test/acceptance/idemand/hotel.e2e-spec.ts",
-            "integrity": "sha1:5b59230f50209b65e7d484754a0b95445ad5bb37"
+            "integrity": "sha1:64a0c5b7c7d5b73e6c90552f7054a5e517f9eed9"
         },
         {
             "path": "postman/idemand/idemand.hotel.postman.json",
-            "integrity": "sha1:501998ec115a5293d4fc8e8248d90bd0c5ff5927"
+            "integrity": "sha1:fae6da67f43ca23b94dfa76bde1ba7c5dfd7ef0d"
         }
     ]
 }

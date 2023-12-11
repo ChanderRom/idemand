@@ -39,8 +39,6 @@ describe('IdemandUpdateRoomByIdCommandHandler', () =>
                     {
                         id: idemandMockRoomData[0].id,
                         type: idemandMockRoomData[0].type,
-                        price: idemandMockRoomData[0].price,
-                        date: idemandMockRoomData[0].date,
                     },
                     {},
                     { timezone: process.env.TZ },

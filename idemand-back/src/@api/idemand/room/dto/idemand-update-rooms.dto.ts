@@ -15,16 +15,4 @@ export class IdemandUpdateRoomsDto
     })
     type?: string;
 
-    @ApiProperty({
-        type       : String,
-        description: 'price [input here api field description]',
-    })
-    price?: string;
-
-    @ApiProperty({
-        type       : String,
-        description: 'date [input here api field description]',
-    })
-    date?: string;
-
 }

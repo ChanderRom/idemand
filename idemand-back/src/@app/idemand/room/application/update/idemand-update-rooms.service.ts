@@ -1,10 +1,8 @@
 import { IdemandAddRoomsContextEvent, IdemandIRoomRepository, IdemandRoom } from '@app/idemand/room';
 import {
     IdemandRoomCreatedAt,
-    IdemandRoomDate,
     IdemandRoomDeletedAt,
     IdemandRoomId,
-    IdemandRoomPrice,
     IdemandRoomType,
     IdemandRoomUpdatedAt,
 } from '@app/idemand/room/domain/value-objects';
@@ -24,8 +22,6 @@ export class IdemandUpdateRoomsService
         payload: {
             id?: IdemandRoomId;
             type?: IdemandRoomType;
-            price?: IdemandRoomPrice;
-            date?: IdemandRoomDate;
         },
         queryStatement?: QueryStatement,
         constraint?: QueryStatement,
@@ -36,8 +32,6 @@ export class IdemandUpdateRoomsService
         const room = IdemandRoom.register(
             payload.id,
             payload.type,
-            payload.price,
-            payload.date,
             null, // createdAt
             new IdemandRoomUpdatedAt({ currentTimestamp: true }),
             null, // deletedAt

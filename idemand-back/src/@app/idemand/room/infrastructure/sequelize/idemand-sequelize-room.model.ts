@@ -26,20 +26,6 @@ export class IdemandRoomModel extends Model<IdemandRoomModel>
     type: string;
 
     @Column({
-        field: 'price',
-        allowNull: false,
-        type: DataTypes.STRING(undefined),
-    })
-    price: string;
-
-    @Column({
-        field: 'date',
-        allowNull: false,
-        type: DataTypes.DATE,
-    })
-    date: string;
-
-    @Column({
         field: 'createdAt',
         allowNull: true,
         type: DataTypes.DATE,

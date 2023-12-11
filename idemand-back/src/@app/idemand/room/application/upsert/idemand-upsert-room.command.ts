@@ -6,8 +6,6 @@ export class IdemandUpsertRoomCommand
         public readonly payload: {
             id: string;
             type?: string;
-            price?: string;
-            date?: string;
         },
         public readonly cQMetadata?: CQMetadata,
     ) {}

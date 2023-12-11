@@ -23,8 +23,6 @@ export class IdemandAddRoomsContextEvent extends AggregateRoot
                     new IdemandCreatedRoomEvent(
                         room.id.value,
                         room.type.value,
-                        room.price.value,
-                        room.date.value,
                         room.createdAt?.value,
                         room.updatedAt?.value,
                         room.deletedAt?.value,
@@ -42,8 +40,6 @@ export class IdemandAddRoomsContextEvent extends AggregateRoot
                     new IdemandUpdatedRoomEvent(
                         room.id.value,
                         room.type.value,
-                        room.price.value,
-                        room.date.value,
                         room.createdAt?.value,
                         room.updatedAt?.value,
                         room.deletedAt?.value,
@@ -61,8 +57,6 @@ export class IdemandAddRoomsContextEvent extends AggregateRoot
                     new IdemandDeletedRoomEvent(
                         room.id.value,
                         room.type.value,
-                        room.price.value,
-                        room.date.value,
                         room.createdAt?.value,
                         room.updatedAt?.value,
                         room.deletedAt?.value,

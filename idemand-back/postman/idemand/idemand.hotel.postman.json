@@ -1,0 +1,561 @@
+{
+    "info": {
+		"_postman_id"   : "d9bc3afc-fd40-5505-b57f-8f5d5118e01b",
+		"name"          : "@app - idemand/hotel",
+		"schema"        : "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+			"name": "GraphQL - idemandCreateHotel",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:IdemandCreateHotelInput!)\n{\n\tidemandCreateHotel (payload:$payload)\n\t{\n\t\tid\n\t\tname\n\t\ttotalRooms\n\t\tbookedRooms\n\t}\n}",
+                        "variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"name\": \"Fantastic Granite Mouse\", \n\t\t\"totalRooms\": 2.259442179358541e+48, \n\t\t\"bookedRooms\": 8.959002125762085e+48\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandCreateHotels",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:[IdemandCreateHotelInput]!)\n{\n\tidemandCreateHotels (payload:$payload)\n}",
+						"variables": "{\n\t\"payload\":\n\t[\n\t\t{\n\t\t\t\"id\": \"f6abd47c-7eb2-4d19-a2ec-d84f2153d72d\", \n\t\t\t\"name\": \"Rustic Wooden Computer\", \n\t\t\t\"totalRooms\": 1.0514723989323083e+48, \n\t\t\t\"bookedRooms\": 2.4644547851219964e+48\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"c783f8b6-2402-4a47-9116-8e73dcffa54f\", \n\t\t\t\"name\": \"Incredible Frozen Tuna\", \n\t\t\t\"totalRooms\": 7.901315130998503e+48, \n\t\t\t\"bookedRooms\": 4.571097945921241e+48\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"0fa2419a-8b51-4c87-80f4-c0c6d9781295\", \n\t\t\t\"name\": \"Refined Frozen Fish\", \n\t\t\t\"totalRooms\": 3.4759212906044286e+48, \n\t\t\t\"bookedRooms\": 2.051698706452964e+48\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"8f56c89d-4a7c-4d9b-abf1-0a799f82e7b7\", \n\t\t\t\"name\": \"Refined Frozen Table\", \n\t\t\t\"totalRooms\": 1.5390825250178153e+48, \n\t\t\t\"bookedRooms\": 5.869581145293185e+48\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"a8e0ade7-c459-49ae-925d-5d04e9d9662f\", \n\t\t\t\"name\": \"Tasty Concrete Salad\", \n\t\t\t\"totalRooms\": 3.335035445938044e+48, \n\t\t\t\"bookedRooms\": 7.602503663078351e+48\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"7ff53893-a878-4c47-9c35-1c5d6a438080\", \n\t\t\t\"name\": \"Ergonomic Concrete Shoes\", \n\t\t\t\"totalRooms\": 7.723640619828485e+48, \n\t\t\t\"bookedRooms\": 2.4838196805252796e+48\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"e2e58949-14a8-4aee-9c58-88718295245b\", \n\t\t\t\"name\": \"Refined Steel Ball\", \n\t\t\t\"totalRooms\": 5.934687481480656e+48, \n\t\t\t\"bookedRooms\": 7.942845879009293e+48\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"a650fc05-9a09-4d10-ab1f-c93b28522824\", \n\t\t\t\"name\": \"Handcrafted Steel Chair\", \n\t\t\t\"totalRooms\": 1.5493349407503245e+48, \n\t\t\t\"bookedRooms\": 1.9220992737000734e+48\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"53fee939-84d9-4f81-b69b-a795787b3e59\", \n\t\t\t\"name\": \"Tasty Fresh Shirt\", \n\t\t\t\"totalRooms\": 4.9806968614596655e+48, \n\t\t\t\"bookedRooms\": 5.927630052833531e+48\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"8a95de77-d944-4ecb-bc7c-edc6011baeae\", \n\t\t\t\"name\": \"Generic Frozen Gloves\", \n\t\t\t\"totalRooms\": 9.279584857834277e+48, \n\t\t\t\"bookedRooms\": 2.726773267801083e+48\n\t\t}\n\t]\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandPaginateHotels",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement $constraint:QueryStatement)\n{\n\tidemandPaginateHotels (query:$query constraint:$constraint)\n\t{\n\t\ttotal\n\t\tcount\n\t\trows\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandGetHotels",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement)\n{\n\tidemandGetHotels (query: $query)\n\t{\n\t\tid\n\t\tname\n\t\ttotalRooms\n\t\tbookedRooms\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{ \n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandFindHotel",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement)\n{\n\tidemandFindHotel (query: $query)\n\t{\n\t\tid\n\t\tname\n\t\ttotalRooms\n\t\tbookedRooms\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandFindHotelById",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($id:ID)\n{\n\tidemandFindHotelById (id:$id)\n\t{\n\t\tid\n\t\tname\n\t\ttotalRooms\n\t\tbookedRooms\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandUpdateHotel",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:IdemandUpdateHotelInput!)\n{\n\tidemandUpdateHotel (payload:$payload)\n\t{\n\t\tid\n\t\tname\n\t\ttotalRooms\n\t\tbookedRooms\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"name\": \"Intelligent Fresh Keyboard\", \n\t\t\"totalRooms\": 1.5236324632263282e+48, \n\t\t\"bookedRooms\": 1.7988360465122063e+48\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandDeleteHotelById",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($id:ID!)\n{\n\tidemandDeleteHotelById (id:$id)\n\t{\n\t\tid\n\t\tname\n\t\ttotalRooms\n\t\tbookedRooms\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - idemandDeleteHotels",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($query:QueryStatement)\n{\n\tidemandDeleteHotels (query: $query)\n\t{\n\t\tid\n\t\tname\n\t\ttotalRooms\n\t\tbookedRooms\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\":\n\t\t\t{\n\t\t\t\t\"[substring]\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/hotel/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key"   : "Content-Type",
+						"name"  : "Content-Type",
+						"type"  : "text",
+						"value" : "application/json"
+					}				],
+				"body": {
+					"mode"  : "raw",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"name\": \"Practical Frozen Towels\", \n\t\"totalRooms\": 9.542928963785484e+48, \n\t\"bookedRooms\": 3.2160076749454264e+48\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/hotel/create",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"hotel",
+                        "create"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/hotels/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key"   : "Content-Type",
+						"name"  : "Content-Type",
+						"type"  : "text",
+						"value" : "application/json"
+					}				],
+				"body": {
+					"mode"  : "raw",
+					"raw"   : "[\n\t{\n\t\t\"id\": \"c0f58864-2c9e-4994-8415-bb4765e87e91\", \n\t\t\"name\": \"Tasty Soft Gloves\", \n\t\t\"totalRooms\": 9.502936496185584e+48, \n\t\t\"bookedRooms\": 1.7087993262807287e+48\n\t}, \n\t{\n\t\t\"id\": \"df80cab3-974d-41c4-8ef8-867c3cbba31c\", \n\t\t\"name\": \"Handmade Granite Shoes\", \n\t\t\"totalRooms\": 8.030167603151077e+48, \n\t\t\"bookedRooms\": 2.1199690310138038e+48\n\t}, \n\t{\n\t\t\"id\": \"5b7ef9e7-03da-4b45-b762-80cedd3c8b42\", \n\t\t\"name\": \"Intelligent Metal Chips\", \n\t\t\"totalRooms\": 8.109363512592502e+48, \n\t\t\"bookedRooms\": 3.720166131212398e+48\n\t}, \n\t{\n\t\t\"id\": \"c783467a-1d41-4cbd-914d-a9fe052fc730\", \n\t\t\"name\": \"Practical Rubber Sausages\", \n\t\t\"totalRooms\": 9.405509194332405e+48, \n\t\t\"bookedRooms\": 7.815522492057595e+48\n\t}, \n\t{\n\t\t\"id\": \"d8907a0d-4d52-4e17-b566-4986e52495f1\", \n\t\t\"name\": \"Rustic Wooden Fish\", \n\t\t\"totalRooms\": 1.917489511620221e+48, \n\t\t\"bookedRooms\": 9.165637947416516e+48\n\t}, \n\t{\n\t\t\"id\": \"7e6ad583-6af5-43f9-b51f-aaf851f76a2b\", \n\t\t\"name\": \"Tasty Frozen Ball\", \n\t\t\"totalRooms\": 8.939161740270954e+48, \n\t\t\"bookedRooms\": 3.318231409250807e+48\n\t}, \n\t{\n\t\t\"id\": \"b28822a1-27cc-46d2-a4cc-f0598dae93cf\", \n\t\t\"name\": \"Unbranded Rubber Chair\", \n\t\t\"totalRooms\": 2.79394354498416e+48, \n\t\t\"bookedRooms\": 4.890702008856996e+48\n\t}, \n\t{\n\t\t\"id\": \"4552362f-01c2-46d7-b329-a198d7451b72\", \n\t\t\"name\": \"Incredible Fresh Hat\", \n\t\t\"totalRooms\": 8.049958496481726e+48, \n\t\t\"bookedRooms\": 2.245599113276462e+48\n\t}, \n\t{\n\t\t\"id\": \"b0bd0b44-d706-470e-b485-c720b0913e38\", \n\t\t\"name\": \"Tasty Cotton Keyboard\", \n\t\t\"totalRooms\": 3.8376792175023407e+48, \n\t\t\"bookedRooms\": 5.34674183111892e+48\n\t}, \n\t{\n\t\t\"id\": \"d8a2740c-c19b-48ce-833f-adc3c8406767\", \n\t\t\"name\": \"Sleek Frozen Pizza\", \n\t\t\"totalRooms\": 8.195499795360909e+48, \n\t\t\"bookedRooms\": 7.562134919053732e+48\n\t}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/hotels/create",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"hotels",
+                        "create"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/hotels/paginate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/hotels/paginate",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+                        "hotels",
+                        "paginate"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/hotels/get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{ \n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/hotels/get",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"hotels",
+                        "get"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/hotel/find",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/hotel/find",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"hotel",
+                        "find"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/hotel/find/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/hotel/find/5b19d6ac-4081-573b-96b3-56964d5326a8",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"hotel",
+                        "find",
+						"5b19d6ac-4081-573b-96b3-56964d5326a8"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/hotel/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"name\": \"Awesome Rubber Table\", \n\t\"totalRooms\": 6.49468639343198e+48, \n\t\"bookedRooms\": 7.228694002174174e+48\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/hotel/update",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"hotel",
+                        "update"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - idemand/hotel/delete/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/hotel/delete/5b19d6ac-4081-573b-96b3-56964d5326a8",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"hotel",
+                        "delete",
+						"5b19d6ac-4081-573b-96b3-56964d5326a8"
+					]
+				}
+			},
+			"response": []
+		},
+        {
+			"name": "REST - idemand/hotels/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\":\n\t\t\t{\n\t\t\t\t\"[substring]\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/idemand/hotels/delete",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"idemand",
+						"hotels",
+                        "delete"
+					]
+				}
+			},
+			"response": []
+		}
+    ],
+    "variable": [
+		{
+			"id": "d9bc3afc-fd40-5505-b57f-8f5d5118e01b",
+			"key": "URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
